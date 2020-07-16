@@ -6,7 +6,7 @@ const DB_NAME = config.dbName;
 const MONGO_URI = `mongodb+srv://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${DB_NAME}?retryWrites=true&w=majority`;
 class MongoLib {
     constructor() {
-        this.client = new MongoClient(MONGO_URI, { useNewUrlParser: true });
+        this.client = new MongoClient(MONGO_URI, { useUnifiedTopology: true });
         this.dbName = DB_NAME;
     }
     connect() {
