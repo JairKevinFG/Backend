@@ -159,7 +159,7 @@ const moviesMock = [
   }
   
   class MoviesServiceMock {
-    async getMovies() {
+    async renderMovies() {
       return Promise.resolve(moviesMock);
     }
   
