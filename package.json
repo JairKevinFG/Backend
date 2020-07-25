@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "DEBUG=app:* nodemon src/index",
-    "start": "NODE_ENV=production node index",
+    "start": "NODE_ENV=production node src/index",
     "test": "mocha src/test/ --exit",
     "cover": "nyc npm run test",
     "report": "nyc report --reporter=html && xdg-open coverage/index.html"
